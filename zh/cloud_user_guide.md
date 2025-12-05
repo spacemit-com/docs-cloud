@@ -11,24 +11,24 @@
 
 ### 手机号注册
 
-（图片）
+![](./static/reg_phone.png)
 
 ### 邮箱注册
 
-（图片）
+![](./static/reg_email.png)
 
 ### 登录
 
 注册成功后点击 **“立即登录”**，进入登录页面，支持 **短信登录** 与 **密码登录**。
-（图片）
+![](./static/login.png)
 
 成功登录后进入系统主界面：
-（图片）
+![](./static/main.png)
 
 ## 2. 申请新实例
 
 在系统主界面点击 **“申请实例”** 进入实例创建页面。
-（图片）
+![](./static/instance.png)
 
 ### 2.1 实例类型
 
@@ -38,12 +38,12 @@
 
 包含：
 
-* Bianbu
-* Deepin
-* OpenHarmony
-* openKylin
+- Bianbu
+- Deepin
+- OpenHarmony
+- openKylin
 
-（图片）
+![](./static/instance_os.png)
 
 #### 基于快应用模板的实例
 
@@ -53,60 +53,59 @@
 - Deepseek 大模型
 - 在线 Python 开发环境 JupyterLab
 
-（图片）
+![](./static/instance_app.png)
 
 #### 基于 RISC-V 算力融合集群的实例
 
-（图片）
+![](./static/instance_riscv.png)
 
 ### 2.2 实例名称
 
 输入自定义实例名称，并勾选同意隐私协议。
-（图片）
+
+![](./static/instance2.png)
 
 ### 2.3 申请时长
 
-（图片）
+![](./static/instance_time.png)
 
-#### 非会员
+- **非会员**
+  可选：48 小时 / 7 天 / 1 个月
 
-可选：48 小时 / 7 天 / 1 个月
-
-#### 会员与管理员
-
-最长可选：3 个月
+- **会员**
+  最长可选：3 个月
 
 ## 3. 远程实例
 
 ### 3.1 命令行访问
 
 申请成功后，可在控制台查看当前账户拥有的实例：
-（图片）
+![](./static/myinstance.png)
 
 点击实例卡片查看实例详情及功能按钮。
-（图片）
+![](./static/myinstance2.png)
 
 点击 **“开始远程”** 进入命令行界面：
-（图片）
+![](./static/instance_remote.png)
 
 命令行界面支持：
 
 - 多会话
 - 分屏
-  （图片）
+![](./static/instance_remote2.png)
 
 点击右上角 **“退出”** 返回主界面。
-（图片）
+![](./static/instance_remote3.png)
 
 ### 3.2 串口调试
 
 在工作台点击 **“串口调试”** 按钮进入串口界面。
-（图片）
+![](./static/instance_serial.png)
 
 ### 3.3 文件操作
 
 工作台左上角点击 **“文件”** 可打开文件树或文件管理器：
-（图片）
+![](./static/instance_file.png)
 
 在文件树中右键目录或文件，可执行：
 
@@ -115,10 +114,11 @@
 - 刷新
 - 新建文件/目录
 
-（图片）
+![](./static/instance_file2.png)
+![](./static/instance_file3.png)
 
 双击文件（例如 `.profile`）可在线编辑：
-（图片）
+![](./static/instance_file5.png)
 
 修改完成后点击右上角 **“保存”**。
 （图片）
