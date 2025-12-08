@@ -314,11 +314,10 @@
    ```bash
    ssh -p 2222 root@localhost
    ```
-
    <img src="static/cmd.png" alt="" width="600">
 
 - 使用 MobaXterm：
-    <img src="static/moba00.png" alt="" width="600">
+    <img src="static/moba00.png" alt="" width="800">
 
    MobaXterm 需要指定 SSH 协议版本为 **SSHv2**。
   - 上图里，选择 **Advanced SSH settings** 标签
@@ -331,7 +330,7 @@
 
 #### 用户密码
 
-<img src="static/password00.png" alt="" width="600">
+<img src="static/password00.png" alt="" width="800">
 
 用户密码在上面的 **连接信息** 和教程页面末尾找到
 
