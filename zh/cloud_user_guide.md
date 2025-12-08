@@ -11,24 +11,24 @@
 
 ### 手机号注册
 
-![](./static/reg_phone.png)
+<img src="static/reg_phone.png" alt="" width="600">
 
 ### 邮箱注册
 
-![](./static/reg_email.png)
+<img src="static/reg_email.png" alt="" width="600">
 
 ### 登录
 
 注册成功后点击 **“立即登录”**，进入登录页面，支持 **短信登录** 与 **密码登录**。
-![](./static/login.png)
+<img src="static/login.png" alt="" width="600">
 
 成功登录后进入系统主界面：
-![](./static/main.png)
+<img src="static/main.png" alt="" width="800">
 
 ## 2. 申请新实例
 
 在系统主界面点击 **“申请实例”** 进入实例创建页面。
-![](./static/instance.png)
+<img src="static/instance.png" alt="" width="800">
 
 ### 2.1 实例类型
 
@@ -43,7 +43,7 @@
 - OpenHarmony
 - openKylin
 
-![](./static/instance_os.png)
+<img src="static/instance_os.png" alt="" width="800">
 
 #### 基于快应用模板的实例
 
@@ -53,21 +53,21 @@
 - Deepseek 大模型
 - 在线 Python 开发环境 JupyterLab
 
-![](./static/instance_app.png)
+<img src="static/instance_app.png" alt="" width="800">
 
 #### 基于 RISC-V 算力融合集群的实例
 
-![](./static/instance_riscv.png)
+<img src="static/instance_riscv.png" alt="" width="800">
 
 ### 2.2 实例名称
 
 输入自定义实例名称，并勾选同意隐私协议。
 
-![](./static/instance2.png)
+<img src="static/instance2.png" alt="" width="600">
 
 ### 2.3 申请时长
 
-![](./static/instance_time.png)
+<img src="static/instance_time.png" alt="" width="400">
 
 - **非会员**
   可选：48 小时 / 7 天 / 1 个月
@@ -80,32 +80,38 @@
 ### 3.1 命令行访问
 
 申请成功后，可在控制台查看当前账户拥有的实例：
-![](./static/myinstance.png)
+
+<img src="static/myinstance.png" alt="" width="600">
 
 点击实例卡片查看实例详情及功能按钮。
-![](./static/myinstance2.png)
+
+<img src="static/myinstance2.png" alt="" width="600">
 
 点击 **“开始远程”** 进入命令行界面：
-![](./static/instance_remote.png)
+<img src="static/instance_remote.png" alt="" width="800">
 
 命令行界面支持：
 
 - 多会话
 - 分屏
-![](./static/instance_remote2.png)
+
+<img src="static/instance_remote2.png" alt="" width="800">
 
 点击右上角 **“退出”** 返回主界面。
-![](./static/instance_remote3.png)
+
+<img src="static/instance_remote3.png" alt="" width="800">
 
 ### 3.2 串口调试
 
 在工作台点击 **“串口调试”** 按钮进入串口界面。
-![](./static/instance_serial.png)
+
+<img src="static/instance_serial.png" alt="" width="800">
 
 ### 3.3 文件操作
 
 工作台左上角点击 **“文件”** 可打开文件树或文件管理器：
-![](./static/instance_file.png)
+
+<img src="static/instance_file.png" alt="" width="800">
 
 在文件树中右键目录或文件，可执行：
 
@@ -114,22 +120,26 @@
 - 刷新
 - 新建文件/目录
 
-![](./static/instance_file2.png)
-![](./static/instance_file3.png)
+<img src="static/instance_file2.png" alt="" width="800">
+
+<img src="static/instance_file3.png" alt="" width="800">
 
 双击文件（例如 `.profile`）可在线编辑：
-![](./static/instance_file4.png)
+
+<img src="static/instance_file4.png" alt="" width="800">
 
 修改完成后点击右上角 **“保存”**。
-![](./static/instance_file5.png)
+
+<img src="static/instance_file5.png" alt="" width="800">
 
 ### 3.4 远程桌面
 
 在工作台顶部点击 **“远程桌面”** 开启或关闭远程桌面模式。
 若按钮为禁用状态，请先切回 Terminal 或串口界面。
-![](./static/remote_desk00.png)
 
-![](./static/remote_desk01.png)
+<img src="static/remote_desk00.png" alt="" width="800">
+
+<img src="static/remote_desk01.png" alt="" width="800">
 
 远程桌面支持：
 
@@ -143,13 +153,13 @@
 - 电源重启
 - 系统重启
 
-![](./static/instance_reboot.png)
+<img src="static/instance_reboot.png" alt="" width="800">
 
 ### 3.6 实例刷机
 
 如下图，点击工作台顶栏 **“刷机”** 按钮，可以选择 **打开刷机面板** 和 **关闭刷机面板**，在右侧镜像列表中选择指定镜像点击 **烧写按钮** 进行刷机
 
-![](./static/instance_flash.png)
+<img src="static/instance_flash.png" alt="" width="800">
 
 ### 3.7 Code Server 应用
 
@@ -158,15 +168,17 @@
 - **打开**：启动 Code Server 在线 IDE 应用
 - **关闭**：停止 Code Server
 
-![](./static/code_server.png)
+<img src="static/code_server.png" alt="" width="800">
 
 #### Python 插件安装
 
 在左侧扩展中搜索 `python` 即可安装对应的 python 插件：
-![](./static/python00.png)
+
+<img src="static/python00.png" alt="" width="800">
 
 安装完成后可进行 Python 开发：
-![](./static/python01.png)
+
+<img src="static/python01.png" alt="" width="800">
 
 ### 3.8 JupyterLab 应用
 
@@ -176,7 +188,8 @@
 - **关闭**：退出 JupyterLab
 
 **注：** 此应用仅在快应用模板中的 JupyterLab 实例支持，其他操作系统和AI镜像没有此应用。
-![](./static/jupyterlab.png)
+
+<img src="static/jupyterlab.png" alt="" width="800">
 
 ### 3.9 通义 Qwen 大模型应用
 
@@ -185,10 +198,11 @@
 - **打开**：进入 Qwen 应用
 - **关闭**：退出 Qwen
 
-![](./static/qwen00.png)
+<img src="static/qwen00.png" alt="" width="800">
 
 也可使用右侧 **AI** 按钮操作。
-![](./static/ai.png)
+
+<img src="static/ai.png" alt="" width="800">
 
 ### 3.10 Deepseek 大模型应用
 
@@ -198,20 +212,22 @@
 - **关闭**：退出 Deepseek
 
 同样支持右侧 **AI** 按钮操作。
-![](./static/deepseek.png)
 
 ## 4. 账户管理
 
 在系统页面右上角点击用户图标进入账户管理：
-![](./static/deepseek.png)
+
+<img src="static/deepseek.png" alt="" width="800">
 
 ### 4.1 修改个人信息
 
 在系统控制台页面，点击右上角 **用户图标** 跳转到 **账户管理界面**
-![](./static/user00.png)
+
+<img src="static/user00.png" alt="" width="800">
 
 在账户设置页面点击 **“编辑个人信息”**：
-![](./static/user01.png)
+
+<img src="static/user01.png" alt="" width="800">
 
 如下图，可修改：
 
@@ -220,32 +236,37 @@
 - 手机号
 - 邮箱
 
-![](./static/user02.png)
+<img src="static/user02.png" alt="" width="500">
 
 示例，修改手机号码
-![](./static/user03.png)
+
+<img src="static/user03.png" alt="" width="500">
 
 保存后点击 **返回系统** 即可回到 账户管理界面。
 
 ### 4.2 消息中心
 
 在账户管理界面，点击左侧 **消息中心** 页签即可查看系统消息
-![](./static/info.png)
+
+<img src="static/info.png" alt="" width="800">
 
 ### 4.3 实例共享
 
 在账户管理界面，点击左侧 **实例共享** 页签即可进行实例共享操作，可将个人实例共享至其他用户。
-![](./static/instance_share.png)
+
+<img src="static/instance_share.png" alt="" width="800">
 
 ### 4.4 API Key 管理
 
 在账户管理界面，点击左侧 **API Key** 页签即可进行 API Key 管理，API Key 用于远程调用实例的API接口。
-![](./static/apikey.png)
+
+<img src="static/apikey.png" alt="" width="800">
 
 ### 4.5 告警信息
 
 在账户管理界面，点击左侧 **告警信息** 页签即可查看实例的告警状态。
-![](./static/notices.png)
+
+<img src="static/notices.png" alt="" width="800">
 
 ## 5. 本地连接
 
@@ -270,19 +291,21 @@
 
 #### 获取 Stunnel 配置
 
-在控制台点击实例卡片 
+在控制台点击实例卡片
 
-![](./static/instance00.png)
+<img src="static/instance00.png" alt="" width="800">
 
 点击 **本地连接** 按钮， 即弹出连接信息和教程页面
-![](./static/local_connect.png)
 
-如下图，配置信息复制到 Stunnel 客户端的配置文件中，并启动 Stunnel 或者 reload 
-![](./static/config.png)
+<img src="static/local_connect.png" alt="" width="600">
+
+如下图，配置信息复制到 Stunnel 客户端的配置文件中，并启动 Stunnel 或者 reload
+
+<img src="static/config.png" alt="" width="600">
 
 人下图，Linux 可以直接使用 Stunnel 配置文件启动即可
-（图片）
-![](./static/linux_stunnel.png)
+
+<img src="static/linux_stunnel.png" alt="" width="800">
 
 #### SSH 连接方式
 
@@ -292,39 +315,40 @@
    ssh -p 2222 root@localhost
    ```
 
-   ![](./static/cmd.png)
+   <img src="static/cmd.png" alt="" width="600">
 
 - 使用 MobaXterm：
-      ![](./static/moba00.png)
+    <img src="static/moba00.png" alt="" width="600">
 
    MobaXterm 需要指定 SSH 协议版本为 **SSHv2**。
-   - 上图里，选择 **Advanced SSH settings** 标签
-   - 点击 **Expert SSH settings** 按钮
-   - 选择 **SSH protocol version** 为 **SSHv2**
+  - 上图里，选择 **Advanced SSH settings** 标签
+  - 点击 **Expert SSH settings** 按钮
+  - 选择 **SSH protocol version** 为 **SSHv2**
   
-  ![](./static/sshv2.png)
+  <img src="static/sshv2.png" alt="" width="600">
 
-   - 点击 **OK** 即可连接
+  - 点击 **OK** 即可连接
 
 #### 用户密码
 
-![](./static/password00.png)
+<img src="static/password00.png" alt="" width="600">
 
 用户密码在上面的 **连接信息** 和教程页面末尾找到
 
-![](./static/password01.png)
+<img src="static/password01.png" alt="" width="600">
 
 ### 5.2 VNC 直连
 
 与 SSH 一样需配置 Stunnel。
 
 以 MobaXterm 为例
+
 - 配置好 Stunnel
 - 点击左边的 **Session** 按钮，选择 **VNC**
 - 地址输入框输入 `localhost`，端口填入 `5901`，点击 **OK** 连接即可
 - 如需密码请参考上一节 SSH 部分 **用户密码** 说明
 
-![](./static/vnc.png)
+<img src="static/vnc.png" alt="" width="800">
 
 成功连接如下图
 
@@ -341,27 +365,31 @@
 
 根据章节 [3.1 命令行访问](#31-命令行访问) 进入到实例工作台之后，点击右侧的 **API 调用** 按钮即可弹出配置页面
 
-![](./static/api00.png)
+<img src="static/api00.png" alt="" width="800">
 
-![](./static/api01.png)
+<img src="static/api01.png" alt="" width="800">
 
 设置请求头后，可通过给定 URL 调用 Ollama 接口：
-![](./static/api02.png)
 
-![](./static/api03.png)
+<img src="static/api02.png" alt="" width="800">
+
+<img src="static/api03.png" alt="" width="800">
 
 ### 6.2 自定义接口调用
 
 实例支持通过指定的端口 `18080` 部署并访问自定义服务。
 
 示例：运行 Python HTTP 服务：
-![](./static/python_http.png)
+
+<img src="static/python_http.png" alt="" width="600">
 
 使用 Postman 模拟请求实例的 Get 或 Post 接口，deviceId 为实例的设备 ID：
-![](./static/postman.png)
+
+<img src="static/postman.png" alt="" width="800">
 
 API Key 参考章节 [4.4 API Key 管理](#44-api-key-管理) 中获取：
-![](./static/apikey.png)
+
+<img src="static/apikey.png" alt="" width="800">
 
 请求地址格式：
 
@@ -369,9 +397,9 @@ API Key 参考章节 [4.4 API Key 管理](#44-api-key-管理) 中获取：
 https://gdriscv.com/api/remote/{deviceId}
 ```
 
-![](./static/address00.png)
+<img src="static/address00.png" alt="" width="800">
 
-![](./static/address01.png)
+<img src="static/address01.png" alt="" width="800">
 
 ## 7. 开发示例
 
@@ -380,6 +408,7 @@ https://gdriscv.com/api/remote/{deviceId}
 #### RVV 编程
 
 RVV（RISC-V Vector）扩展用于高性能向量计算，与 ARM NEON 存在差异：
+
 | 特性 | SVE (ARM) | RVV (RISC-V) |
 | --- | --- | --- |
 | 指令集架构 | ARM v8/v9 的扩展 | RISC-V 的官方矢量扩展（V 扩展） |
@@ -392,6 +421,7 @@ RVV（RISC-V Vector）扩展用于高性能向量计算，与 ARM NEON 存在差
 | 应用场景 | ARM生态的高性能计算（服务器、超算） | RISC-V的定制化场景（AIoT、边缘计算） |
 
 核心代码示例：
+
 ```c
 void vector_add_rvv(int32_t* vec1, int32_t* vec2, int32_t* result, size_t size) {
     // 设置向量长度
@@ -410,38 +440,46 @@ void vector_add_rvv(int32_t* vec1, int32_t* vec2, int32_t* result, size_t size) 
 ```
 
 在云实例中通过 Code Server 编辑代码：
-![](./static/rvv00.png)
+
+<img src="static/rvv00.png" alt="" width="800">
 
 通过 gcc 编译与运行，示例结果如下：
-![](./static/rvv01.png)
+
+<img src="static/rvv01.png" alt="" width="600">
 
 #### RISC-V AI 指令编程
 
 K1是一款8核RISCV AI-CPU。在RISCV开源指令集的基础上，K1增加了通用AI能力，可以提供50 KDMIPSCPU算力和2.0 TOPS的AI算力。通过将AI算力集成在CPU核内，K1可以实现对所有主流AI生态系统的快速融合。此外，K1支持RISC-V Vector 1.0标准，提供256-bit的向量计算带宽，可以提供2倍于ARM NEON的SIMD并行处理能力。
 
-![](./static/ai-cpu.png)
+<img src="static/ai-cpu.png" alt="" width="800">
 
 核心代码示例：
-![](./static/demo00.png)
+
+<img src="static/demo00.png" alt="" width="800">
 
 通过 Code Server 编辑并编译：
-![](./static/demo01.png)
+
+<img src="static/demo01.png" alt="" width="800">
 
 运行结果：
-![](./static/demo03.png)
+
+<img src="static/demo03.png" alt="" width="500">
 
 #### 卷积优化示例
 
 卷积神经网络（CNN）是一种深度学习模型，常用于解决图像识别问题。相较于全连接神经网络，卷积神经网络采用局部感知性和参数共享的方式，通过卷积核的滑动和权值共享，可以有效减少参数数量和计算量，提高模型的泛化能力。其广泛应用于图像分类、目标检测、图像分割等领域。卷积神经网络在图像处理领域的应用不仅提高了图像处理的效率和准确性，也推动了人工智能技术在视觉领域的发展和应用。
 
 1×3 卷积核心代码示例：
-![](./static/cnn00.png)
+
+<img src="static/cnn00.png" alt="" width="800">
 
 在云实例中编辑：
-![](./static/cnn01.png)
+
+<img src="static/cnn01.png" alt="" width="800">
 
 运行结果：
-![](./static/cnn02.png)
+
+<img src="static/cnn02.png" alt="" width="500">
 
 ## 7.2 AI 开发
 
@@ -479,7 +517,7 @@ pip install -r requirements.txt --index-url https://git.spacemit.com/api/v4/proj
 
 云实例打开code-server编辑代码:
 
-![](./static/yolov8_00.png)
+<img src="static/yolov8_00.png" alt="" width="800">
 
 #### 运行
 
@@ -488,7 +526,8 @@ python test_yolov8_pose.py
 ```
 
 示例结果如下
-![](./static/yolov8_01.png)
+
+<img src="static/yolov8_01.png" alt="" width="800">
 
 ### YOLOv5-face 人脸检测
 
@@ -516,10 +555,11 @@ pip install -r requirements.txt --index-url https://git.spacemit.com/api/v4/proj
 
 在 code-server 打开并编辑代码 `test_yolov5-face.py`：
 
-![](./static/yolov5_00.png)
+<img src="static/yolov5_00.png" alt="" width="800">
 
 示例结果如下
-![](./static/yolov5_01.png)
+
+<img src="static/yolov5_01.png" alt="" width="800">
 
 ### 7.3 OCR 识别
 
@@ -536,19 +576,22 @@ git clone https://gitee.com/bianbu/spacemit-demo.git
 #### 下载模型
 
 执行模型下载脚本
+
 ```bash
 cd spacemit-demo/examples/CV/ocr/model
 sh download_model.sh
 ```
 
 执行测试数据下载脚本
+
 ```bash
 cd data
 sh download_data.sh
 ```
 
 在云实例打开 code-server 编辑 `test_ocr.py` 代码：
-![](./static/ocr00.png)
+
+<img src="static/ocr00.png" alt="" width="800">
 
 #### 创建环境并安装依赖
 
@@ -559,19 +602,20 @@ pip install -r requirements.txt --index-url https://git.spacemit.com/api/v4/proj
 ```
 
 #### 编辑与运行
+
 执行代码从 log 打印可看出识别结果
 
-![](./static/ocr01.png)
+<img src="static/ocr01.png" alt="" width="800">
 
 好的，这里是 **经过专业技术写作方式优化后的中文版本**，结构清晰、表达专业，可直接用于技术文档或 GitHub：
-
 
 ## 7.3 OpenHarmony 调试
 
 ### 申请在线实例并进行远程连接
 
 申请 OpenHarmony 在线实例后，可通过远程桌面进行开发与调试操作。
-![](./static/oh00.png)
+
+<img src="static/oh00.png" alt="" width="800">
 
 ### 查看日志（hilog）
 
@@ -581,7 +625,7 @@ pip install -r requirements.txt --index-url https://git.spacemit.com/api/v4/proj
 hilog
 ```
 
-![](./static/oh01.png)
+<img src="static/oh01.png" alt="" width="800">
 
 ### 应用文件管理（上传 / 安装 / 删除 / 查看）
 
@@ -592,19 +636,19 @@ hilog
 - 删除
 - 查看
 
-![](./static/oh02.png)
+<img src="static/oh02.png" alt="" width="800">
 
 ### 应用卸载
 
 在远程桌面上选中目标应用图标，**鼠标左键长按**，当出现卸载选项后即可执行卸载。
 
-![](./static/oh03.png)
+<img src="static/oh03.png" alt="" width="800">
 
 ### 应用安装
 
 点击工具区域中的 **“安装”** 按钮，选择待安装的应用包即可完成安装流程。
 
-![](./static/oh04.png)
+<img src="static/oh04.png" alt="" width="400">
 
 ### 查看安装日志
 
@@ -616,7 +660,7 @@ hilog | grep bm
 
 如果日志中出现 `bm output`，则说明应用安装成功。
 
-![](./static/oh05.png)
+<img src="static/oh05.png" alt="" width="800">
 
 ### 查看应用运行日志
 
@@ -630,9 +674,10 @@ hilog | grep "xxx"
 hilog | grep "VideoPlay"
 ```
 
-![](./static/oh06.png)
+<img src="static/oh06.png" alt="" width="800">
 
 ### 大模型开发
+
 Ollama 以及 MCP开发（待补充）
 
 ### GUI 开发
