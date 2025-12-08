@@ -20,14 +20,17 @@
 ### 登录
 
 注册成功后点击 **“立即登录”**，进入登录页面，支持 **短信登录** 与 **密码登录**。
+
 <img src="static/login.png" alt="" width="600">
 
 成功登录后进入系统主界面：
+
 <img src="static/main.png" alt="" width="800">
 
 ## 2. 申请新实例
 
 在系统主界面点击 **“申请实例”** 进入实例创建页面。
+
 <img src="static/instance.png" alt="" width="800">
 
 ### 2.1 实例类型
@@ -88,6 +91,7 @@
 <img src="static/myinstance2.png" alt="" width="600">
 
 点击 **“开始远程”** 进入命令行界面：
+
 <img src="static/instance_remote.png" alt="" width="800">
 
 命令行界面支持：
@@ -314,6 +318,7 @@
    ```bash
    ssh -p 2222 root@localhost
    ```
+
   <img src="static/cmd.png" alt="" width="600">
 
 - 使用 MobaXterm：
@@ -682,4 +687,4 @@ Ollama 以及 MCP开发（待补充）
 
 #### GUI 开发
 
-基于RISC-V在线环境QT开发、Electron开发 （待补充）
+基于 RISC-V 在线环境 QT 开发、Electron 开发（待补充）
