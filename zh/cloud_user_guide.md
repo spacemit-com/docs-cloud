@@ -314,10 +314,10 @@
    ```bash
    ssh -p 2222 root@localhost
    ```
-   <img src="static/cmd.png" alt="" width="600">
+  <img src="static/cmd.png" alt="" width="600">
 
 - 使用 MobaXterm：
-    <img src="static/moba00.png" alt="" width="800">
+  <img src="static/moba00.png" alt="" width="800">
 
    MobaXterm 需要指定 SSH 协议版本为 **SSHv2**。
   - 上图里，选择 **Advanced SSH settings** 标签
@@ -480,19 +480,19 @@ K1是一款8核RISCV AI-CPU。在RISCV开源指令集的基础上，K1增加了�
 
 <img src="static/cnn02.png" alt="" width="500">
 
-## 7.2 AI 开发
+### 7.2 AI 开发
 
-### YOLOv8 姿态识别
+#### YOLOv8 姿态识别
 
 YOLOv8-pose 是 Ultralytics 团队在 YOLOv8 基础上开发的用于人体姿态估计（Human Pose Estimation） 的模型，能够实时检测图像或视频中的人体，并同时预测人体关键点（如关节、四肢端点等）的位置。它继承了 YOLO 系列 “单阶段检测” 的高效特性，在精度和速度上都表现优异，广泛应用于动作识别、运动分析、人机交互等场景。本例子介绍基于RISC-V AI算力和优化的RISC-V vector1.0 的性能下姿态识别开发示例：
 
-#### 下载代码
+##### 下载代码
 
 ```bash
 git clone https://gitee.com/bianbu/spacemit-demo.git
 ```
 
-#### 下载模型
+##### 下载模型
 
 ```bash
 cd spacemit-demo/examples/CV/yolov8-pose/model
@@ -504,7 +504,7 @@ sh download_model.sh
 - FP32: `yolov8n-pose.onnx`
 - INT8: `yolov8n-pose.q.onnx`
 
-#### 创建环境并安装依赖
+##### 创建环境并安装依赖
 
 ```bash
 python3 -m venv <env>
@@ -512,13 +512,13 @@ source <env>/bin/activate
 pip install -r requirements.txt --index-url https://git.spacemit.com/api/v4/projects/33/packages/pypi/simple
 ```
 
-#### 编辑代码
+##### 编辑代码
 
 云实例打开code-server编辑代码:
 
 <img src="static/yolov8_00.png" alt="" width="800">
 
-#### 运行
+##### 运行
 
 ```bash
 python test_yolov8_pose.py
@@ -528,13 +528,13 @@ python test_yolov8_pose.py
 
 <img src="static/yolov8_01.png" alt="" width="800">
 
-### YOLOv5-face 人脸检测
+#### YOLOv5-face 人脸检测
 
 YOLOv5-face 是基于 YOLOv5 改进的人脸检测模型，专注于高精度、实时的人脸检测任务。它在 YOLOv5 基础架构上针对人脸检测的特点（如人脸尺度小、密集分布、姿态多样等）进行了优化，能够高效检测图像或视频中的人脸，并输出边界框（bounding box），广泛应用于人脸验证、监控安防、表情分析等场景。
 
 本例子介绍基于 RISC-V AI 算力和优化的 RISC-V vector1.0 的性能下人脸识别开发示例。
 
-#### 下载示例代码与模型
+##### 下载示例代码与模型
 
 ```bash
 git clone https://gitee.com/bianbu/spacemit-demo.git
@@ -542,7 +542,7 @@ cd spacemit-demo/examples/CV/yolov5-face/model
 sh download_model.sh
 ```
 
-#### 创建环境并安装依赖
+##### 创建环境并安装依赖
 
 ```
 python3 -m venv name(虚拟环境名) 
@@ -550,7 +550,7 @@ source name/bin/activate
 pip install -r requirements.txt --index-url https://git.spacemit.com/api/v4/projects/33/packages/pypi/simple
 ```
 
-#### 编辑与运行
+##### 编辑与运行
 
 在 code-server 打开并编辑代码 `test_yolov5-face.py`：
 
@@ -608,15 +608,15 @@ pip install -r requirements.txt --index-url https://git.spacemit.com/api/v4/proj
 
 好的，这里是 **经过专业技术写作方式优化后的中文版本**，结构清晰、表达专业，可直接用于技术文档或 GitHub：
 
-## 7.3 OpenHarmony 调试
+### 7.3 OpenHarmony 调试
 
-### 申请在线实例并进行远程连接
+#### 申请在线实例并进行远程连接
 
 申请 OpenHarmony 在线实例后，可通过远程桌面进行开发与调试操作。
 
 <img src="static/oh00.png" alt="" width="800">
 
-### 查看日志（hilog）
+#### 查看日志（hilog）
 
 在远程环境中，执行以下命令即可实时查看系统日志：
 
@@ -626,7 +626,7 @@ hilog
 
 <img src="static/oh01.png" alt="" width="800">
 
-### 应用文件管理（上传 / 安装 / 删除 / 查看）
+#### 应用文件管理（上传 / 安装 / 删除 / 查看）
 
 在远程桌面右下角的工具区域，可以对应用文件进行：
 
@@ -637,19 +637,19 @@ hilog
 
 <img src="static/oh02.png" alt="" width="800">
 
-### 应用卸载
+#### 应用卸载
 
 在远程桌面上选中目标应用图标，**鼠标左键长按**，当出现卸载选项后即可执行卸载。
 
 <img src="static/oh03.png" alt="" width="800">
 
-### 应用安装
+#### 应用安装
 
 点击工具区域中的 **“安装”** 按钮，选择待安装的应用包即可完成安装流程。
 
 <img src="static/oh04.png" alt="" width="400">
 
-### 查看安装日志
+#### 查看安装日志
 
 安装过程中，可通过如下命令查看安装相关日志：
 
@@ -661,7 +661,7 @@ hilog | grep bm
 
 <img src="static/oh05.png" alt="" width="800">
 
-### 查看应用运行日志
+#### 查看应用运行日志
 
 ```bash
 hilog | grep "xxx"
@@ -675,10 +675,10 @@ hilog | grep "VideoPlay"
 
 <img src="static/oh06.png" alt="" width="800">
 
-### 大模型开发
+#### 大模型开发
 
 Ollama 以及 MCP开发（待补充）
 
-### GUI 开发
+#### GUI 开发
 
 基于RISC-V在线环境QT开发、Electron开发 （待补充）
