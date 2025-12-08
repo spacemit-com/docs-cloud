@@ -1,4 +1,4 @@
-# 进迭云平台使用指南
+# SpacemiT Cloud User Guide
 
 ```
 最新版本：2025/12/08
