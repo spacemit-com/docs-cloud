@@ -1,9 +1,5 @@
 # SpacemiT Cloud User Guide
 
-```
-最新版本：2025/12/08
-```
-
 ## 1. 注册 & 登录
 
 访问浏览器网址：[https://gdriscv.com](https://gdriscv.com)
