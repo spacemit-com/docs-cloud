@@ -1,6 +1,6 @@
 # SpacemiT Cloud User Guide
 
-## 1. 注册 & 登录
+## 1. Register & Login
 
 访问浏览器网址：[https://gdriscv.com](https://gdriscv.com)
 点击 **“立刻注册”** 按钮进入注册页面。
