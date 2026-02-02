@@ -2,8 +2,8 @@
 
 ## 1. Register & Login
 
-访问浏览器网址：[https://gdriscv.com](https://gdriscv.com)
-点击 **“立刻注册”** 按钮进入注册页面。
+- Visit: [https://gdriscv.com](https://gdriscv.com)
+- Click **“立刻注册”** 按钮进入注册页面。
 
 ### 手机号注册
 
