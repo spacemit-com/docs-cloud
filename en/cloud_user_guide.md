@@ -3,7 +3,7 @@
 ## 1. Register & Login
 
 - Visit: [https://gdriscv.com](https://gdriscv.com)
-- Click **“立刻注册”** 按钮进入注册页面。
+- Click **“立刻注册”** button to go to the register page
 
 ### 手机号注册
 
