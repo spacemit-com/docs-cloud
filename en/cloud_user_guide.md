@@ -9,7 +9,7 @@
 
 <img src="static/reg_phone.png" alt="" width="600">
 
-### 邮箱注册
+### Email Register
 
 <img src="static/reg_email.png" alt="" width="600">
 
