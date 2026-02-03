@@ -5,7 +5,7 @@
 - Visit: [https://gdriscv.com](https://gdriscv.com)
 - Click **“立刻注册”** button to go to the register page
 
-### 手机号注册
+### Phone Number Register
 
 <img src="static/reg_phone.png" alt="" width="600">
 
