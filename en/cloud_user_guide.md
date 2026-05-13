@@ -1,41 +1,79 @@
-# SpacemiT Cloud User Guide
+# SpacemiT Cloud Platform User Guide
 
-## 1. Register & Login
+This document serves as the official user guide for the SpacemiT Cloud Platform. It is intended for new platform users and developers, and provides a systematic introduction to account registration, instance provisioning, remote access, platform applications, local connectivity, API usage, and development examples. This guide helps users efficiently complete environment setup, resource configuration, and application development.
 
-- Visit: [https://gdriscv.com](https://gdriscv.com)
-- Click **“立刻注册”** button to go to the register page
+## 1. Document Overview
 
-### Phone Number Register
+### 1.1 Scope
+
+This document applies to common usage scenarios of the SpacemiT Cloud Platform, including but not limited to:
+
+- Platform registration and login
+- Cloud instance provisioning and management
+- Remote access to instances through web-based or local tools
+- Use of built-in platform applications and development environments
+- Secondary development through instance-exposed APIs
+
+### 1.2 Platform Access URL
+
+Platform URL: [https://gdriscv.com](https://gdriscv.com)
+
+## 2. Registration and Sign-In
+
+### 2.1 Register an Account
+
+After accessing the official platform website, click **Sign Up Now** on the homepage to enter the registration process.
+
+<img src="static/register.png" alt="" width="600">
+
+The platform currently supports the following registration methods:
+
+- Mobile phone number registration (currently supports mainland China mobile numbers only)
+- Email registration
+
+#### Mobile Phone Registration
 
 <img src="static/reg_phone.png" alt="" width="600">
 
-### Email Register
+#### Email Registration
 
 <img src="static/reg_email.png" alt="" width="600">
 
-### 登录
+### 2.2 Platform Login
 
-注册成功后点击 **“立即登录”**，进入登录页面，支持 **短信登录** 与 **密码登录**。
+After registration is completed, click **Login Now** to enter the login page.
+
+The platform supports the following login methods:
+
+- SMS verification login
+- Password login
 
 <img src="static/login.png" alt="" width="600">
 
-成功登录后进入系统主界面：
+After successful login, the system enters the main platform interface.
 
 <img src="static/main.png" alt="" width="800">
 
-## 2. 申请新实例
+## 3. Instance Provisioning
 
-在系统主界面点击 **“申请实例”** 进入实例创建页面。
+In the platform main interface, under **My Instances**:
 
+- For users without instances, click **Apply New** to launch the instance creation page.
+  <img src="static/instancex00.png" alt="" width="800">
+s
+- For users with existing instances, click **Apply New Instance** to launch the instance creation page.
+  <img src="static/instancex01.png" alt="" width="800">
+
+The following figure shows the instance creation page.
 <img src="static/instance.png" alt="" width="800">
 
-### 2.1 实例类型
+### 3.1 Select Instance Type
 
-系统支持多种方式创建实例，包括不同的操作系统镜像、快应用模板以及 RISC-V 算力集群等。
+The platform provides multiple instance creation methods. Users may select an appropriate instance type according to development requirements, workload requirements, and target application scenarios.
 
-#### 基于操作系统的镜像
+#### 3.1.1 Create from Operating System Image
 
-包含：
+Supported operating system images include:
 
 - Bianbu
 - Deepin
@@ -44,237 +82,254 @@
 
 <img src="static/instance_os.png" alt="" width="800">
 
-#### 基于快应用模板的实例
+#### 3.1.2 Create from Quick Application Template
 
-包含：
+Supported quick application templates include:
 
-- 通义 Qwen 大模型
-- Deepseek 大模型
-- 在线 Python 开发环境 JupyterLab
+- Tongyi Qwen large language model
+- DeepSeek large language model
+- JupyterLab online Python development environment
 
 <img src="static/instance_app.png" alt="" width="800">
 
-#### 基于 RISC-V 算力融合集群的实例
+#### 3.1.3 Create from RISC-V Heterogeneous Computing Cluster
+
+This instance type is suitable for development, validation, and computing tasks requiring access to RISC-V heterogeneous computing resources.
 
 <img src="static/instance_riscv.png" alt="" width="800">
 
-### 2.2 实例名称
+### 3.2 Configure Instance Name
 
-输入自定义实例名称，并勾选同意隐私协议。
+Enter the instance name and select the relevant agreements before submitting the request.
 
 <img src="static/instance2.png" alt="" width="600">
 
-### 2.3 申请时长
+### 3.3 Select Instance Duration
 
 <img src="static/instance_time.png" alt="" width="400">
 
-- **非会员**
-  可选：48 小时 / 7 天 / 1 个月
+- Non-member users: 48 hours, 7 days, or 1 month
+- Member users: Up to 3 months
 
-- **会员**
-  最长可选：3 个月
+### 3.4 Create Instance
 
-## 3. 远程实例
+After configuration is completed, click **Get Start** to create the instance.
 
-### 3.1 命令行访问
+<img src="static/instance_start.png" alt="" width="600">
 
-申请成功后，可在控制台查看当前账户拥有的实例：
+## 4. Remote Instance Access
+
+After an instance is successfully created, provisioned instance resources under the current account can be viewed.
 
 <img src="static/myinstance.png" alt="" width="600">
 
-点击实例卡片查看实例详情及功能按钮。
+Click an instance card to view instance specification and available functions.
 
 <img src="static/myinstance2.png" alt="" width="600">
 
-点击 **“开始远程”** 进入命令行界面：
+### 4.1 Command-Line Access
+
+Click **Start Remote Access**
+
+<img src="static/remote_start.png" alt="" width="400">
+
+The terminal workspace is displayed.
 
 <img src="static/instance_remote.png" alt="" width="800">
 
-命令行界面支持：
+The command-line interface supports:
 
-- 多会话
-- 分屏
+- Multi-session management
+- Split-screen operation
 
 <img src="static/instance_remote2.png" alt="" width="800">
 
-点击右上角 **“退出”** 返回主界面。
+After use, click the **Exit** icon in the upper-right corner to return to the main platform interface.
 
 <img src="static/instance_remote3.png" alt="" width="800">
 
-### 3.2 串口调试
+### 4.2 Serial Port Debugging
 
-在工作台点击 **“串口调试”** 按钮进入串口界面。
+In the workspace, click the **Serial Debug** button to enter the serial terminal interface.
 
 <img src="static/instance_serial.png" alt="" width="800">
 
-### 3.3 文件操作
+### 4.3 File Management and Online Editing
 
-工作台左上角点击 **“文件”** 可打开文件树或文件管理器：
+In the upper-left corner of the workspace, click **File** to open the file tree or file tree management.
 
 <img src="static/instance_file.png" alt="" width="800">
 
-在文件树中右键目录或文件，可执行：
+Right-click a directory or file in the file tree to perform the following operations:
 
-- 上传
-- 下载
-- 刷新
-- 新建文件/目录
+- Refresh
+- Delete File
+- Create Folder
+- Upload File
+- Download File
 
 <img src="static/instance_file2.png" alt="" width="800">
 
 <img src="static/instance_file3.png" alt="" width="800">
 
-双击文件（例如 `.profile`）可在线编辑：
+Double-click a file (such as `.profile`) to edit it directly in the browser.
 
 <img src="static/instance_file4.png" alt="" width="800">
 
-修改完成后点击右上角 **“保存”**。
+After editing is complete, click the **Save** icon in the upper-right corner to submit the changes.
 
 <img src="static/instance_file5.png" alt="" width="800">
 
-### 3.4 远程桌面
+### 4.4 Remote Desktop
 
-在工作台顶部点击 **“远程桌面”** 开启或关闭远程桌面模式。
-若按钮为禁用状态，请先切回 Terminal 或串口界面。
+Click **Remote Desktop** at the top of the workspace to enable or disable graphical remote desktop mode.
+
+> Note: If this button is not clickable, switch back to the Terminal or Serial Debug first.
 
 <img src="static/remote_desk00.png" alt="" width="800">
 
 <img src="static/remote_desk01.png" alt="" width="800">
 
-远程桌面支持：
+Remote desktop supports the following functions:
 
-- 尺寸调整
-- 全屏模式
+- Window resizing
+- Full-screen display
 
-### 3.5 实例重启
+### 4.5 Instance Restart
 
-点击顶部 **“控制”** 按钮，可选择：
+Click **Control** in the top bar to perform the following management operations:
 
-- 电源重启
-- 系统重启
+- Power reboot
+- System reboot
 
 <img src="static/instance_reboot.png" alt="" width="800">
 
-### 3.6 实例刷机
+### 4.6 Instance Flashing
 
-如下图，点击工作台顶栏 **“刷机”** 按钮，可以选择 **打开刷机面板** 和 **关闭刷机面板**，在右侧镜像列表中选择指定镜像点击 **烧写按钮** 进行刷机
+Click **Flash** in the top bar of the workspace to perform the following operations:
+
+- Open the flashing panel
+- Close the flashing panel
+- Select a target image from the image list on the right and click the **Flash** icon
 
 <img src="static/instance_flash.png" alt="" width="800">
 
-### 3.7 Code Server 应用
+> Flashing operations may affect the current instance environment and data. Back up important data before performing flashing operations.
 
-工作台顶部点击 **应用 → code-server**：
+## 5. Built-In Platform Applications
 
-- **打开**：启动 Code Server 在线 IDE 应用
-- **关闭**：停止 Code Server
+### 5.1 code-server
+
+In the top toolbar of the workspace, click **Applications → code-server**:
+
+- **Open**: Launch the Code Server online IDE
+- **Close**: Stop Code Server
 
 <img src="static/code_server.png" alt="" width="800">
 
-#### Python 插件安装
+#### Install Python Extension
 
-在左侧扩展中搜索 `python` 即可安装对应的 python 插件：
+Search for `python` in the extension panel on the left. After the extension is installed, online Python development is available.
 
 <img src="static/python00.png" alt="" width="800">
 
-安装完成后可进行 Python 开发：
-
 <img src="static/python01.png" alt="" width="800">
 
-### 3.8 JupyterLab 应用
+### 5.2 JupyterLab
 
-点击工作台顶栏 **应用 → JupyterLab**：
+In the top toolbar of the workspace, click **Applications → JupyterLab**:
 
-- **打开**：进入 JupyterLab
-- **关闭**：退出 JupyterLab
+- **Open**: Launch JupyterLab
+- **Close**: Exit JupyterLab
 
-**注：** 此应用仅在快应用模板中的 JupyterLab 实例支持，其他操作系统和AI镜像没有此应用。
+**Note:** JupyterLab is available only in instances created from the JupyterLab quick application template. Other operating system images and AI images do not provide this application by default.
 
 <img src="static/jupyterlab.png" alt="" width="800">
 
-### 3.9 通义 Qwen 大模型应用
+### 5.3 Tongyi Qwen Large Model Application
 
-点击工作台顶栏 **应用 → qwen-ai**：
+In the top toolbar of the workspace, click **Applications → qwen-ai**:
 
-- **打开**：进入 Qwen 应用
-- **关闭**：退出 Qwen
+- **Open**: Launch the Qwen application
+- **Close**: Exit the Qwen application
 
 <img src="static/qwen00.png" alt="" width="800">
 
-也可使用右侧 **AI** 按钮操作。
+The related AI functions can also be accessed quickly through the **AI** icon on the right.
 
 <img src="static/ai.png" alt="" width="800">
 
-### 3.10 Deepseek 大模型应用
+### 5.4 Deepseek Large Model Application
 
-点击工作台顶栏 **应用 → deepseek-ai**：
+In the top toolbar of the workspace, click **Applications → deepseek-ai**:
 
-- **打开**：进入 Deepseek 应用
-- **关闭**：退出 Deepseek
-
-同样支持右侧 **AI** 按钮操作。
-
-## 4. 账户管理
-
-在系统页面右上角点击用户图标进入账户管理：
+- **Open**: Launch the DeepSeek application
+- **Close**: Exit the DeepSeek application
 
 <img src="static/deepseek.png" alt="" width="800">
 
-### 4.1 修改个人信息
+Quick access through the **AI** icon on the right side is also supported.
 
-在系统控制台页面，点击右上角 **用户图标** 跳转到 **账户管理界面**
+## 6. Account Management
+
+### 6.1 Modify Personal Information
+
+Click the user icon in the upper-right corner of the system page to enter the account management center.
 
 <img src="static/user00.png" alt="" width="800">
 
-在账户设置页面点击 **“编辑个人信息”**：
+On the account settings page, click **Edit Profile**.
 
 <img src="static/user01.png" alt="" width="800">
 
-如下图，可修改：
+The following account information is currently supported:
 
-- 用户名
-- 密码
-- 手机号
-- 邮箱
+- Username
+- Password
+- Mobile phone number
+- Email address
 
 <img src="static/user02.png" alt="" width="500">
 
-示例，修改手机号码
+The following example shows the mobile phone number modification page:
 
 <img src="static/user03.png" alt="" width="500">
 
-保存后点击 **返回系统** 即可回到 账户管理界面。
+After saving, click Return to System to return to the account management interface.
 
-### 4.2 消息中心
+### 6.2 Message Center
 
-在账户管理界面，点击左侧 **消息中心** 页签即可查看系统消息
+In the account management interface, click the **Message Center** tab on the left to view platform notifications centrally.
 
 <img src="static/info.png" alt="" width="800">
 
-### 4.3 实例共享
+### 6.3 Instance Sharing
 
-在账户管理界面，点击左侧 **实例共享** 页签即可进行实例共享操作，可将个人实例共享至其他用户。
+In the account management interface, click the **Instance Sharing** tab on the left to share personal instance resources with other users.
 
 <img src="static/instance_share.png" alt="" width="800">
 
-### 4.4 API Key 管理
+### 6.4 API Key Management
 
-在账户管理界面，点击左侧 **API Key** 页签即可进行 API Key 管理，API Key 用于远程调用实例的API接口。
+In the account management interface, click the **API Key** tab on the left to manage API keys.
+
+API keys are primarily used to access APIs exposed by instances remotely.
 
 <img src="static/apikey.png" alt="" width="800">
 
-### 4.5 告警信息
+### 6.5 Alert Information
 
-在账户管理界面，点击左侧 **告警信息** 页签即可查看实例的告警状态。
+In the account management interface, click the **Instance Warning** tab on the left to view instance-related alert status information.
 
 <img src="static/notices.png" alt="" width="800">
 
-## 5. 本地连接
+## 7. Local Instance Connection
 
-### 5.1 SSH 直连
+### 7.1 Direct SSH Connection
 
-系统支持本地SSH直连实例，SSH 直连需启用 **TLS 隧道**，建议使用 Stunnel。
+The platform supports direct connection to instances through a local SSH client. Before establishing a direct SSH connection, TLS tunneling must be enabled. Stunnel is recommended.
 
-#### 客户端安装
+#### 7.1.1 Install Stunnel Client
 
 - Windows: [https://www.stunnel.org/downloads/stunnel-latest-win64-installer.exe](https://www.stunnel.org/downloads/stunnel-latest-win64-installer.exe)
 - Ubuntu/Debian:
@@ -289,112 +344,118 @@
   sudo yum install stunnel
   ```
 
-#### 获取 Stunnel 配置
+#### 7.1.2 Obtain Stunnel Configuration
 
-在控制台点击实例卡片
+In the console, click the target instance card.
 
 <img src="static/instance00.png" alt="" width="800">
 
-点击 **本地连接** 按钮， 即弹出连接信息和教程页面
+Click **Local Connection** to open the page containing connection information and operating instructions.
 
 <img src="static/local_connect.png" alt="" width="600">
 
-如下图，配置信息复制到 Stunnel 客户端的配置文件中，并启动 Stunnel 或者 reload
+Copy the configuration information shown on the page into the Stunnel client configuration file, then start or reload the Stunnel service.
 
 <img src="static/config.png" alt="" width="600">
 
-人下图，Linux 可以直接使用 Stunnel 配置文件启动即可
+On Linux systems, the generated Stunnel configuration file can be used directly to start the service.
 
 <img src="static/linux_stunnel.png" alt="" width="800">
 
-#### SSH 连接方式
+#### 7.1.3 Connect Through the Command Line
 
-- 使用 CMD 命令行连接, 示例如下：
+Example command:
 
-   ```bash
-   ssh -p 2222 root@localhost
-   ```
+```bash
+ssh -p 2222 root@localhost
+```
 
-  <img src="static/cmd.png" alt="" width="600">
+<img src="static/cmd.png" alt="" width="600">
 
-- 使用 MobaXterm：
+#### 7.1.4 Connect Through MobaXterm
 
-  <img src="static/moba00.png" alt="" width="800">
+<img src="static/moba00.png" alt="" width="800">
 
-  MobaXterm 需要指定 SSH 协议版本为 **SSHv2**。
-  - 上图里，选择 **Advanced SSH settings** 标签
-  - 点击 **Expert SSH settings** 按钮
-  - 选择 **SSH protocol version** 为 **SSHv2**
-  
-  <img src="static/sshv2.png" alt="" width="600">
+When using MobaXterm, the SSH protocol version must be explicitly specified as **SSHv2**.
 
-  - 点击 **OK** 即可连接
+Procedure:
 
-#### 用户密码
+1. Select the **Advanced SSH settings** tab.
+2. Click **Expert SSH settings**.
+3. Set **SSH protocol version** to **SSHv2**.
+4. Click **OK** to complete the connection.
+
+<img src="static/sshv2.png" alt="" width="600">
+
+#### 7.1.5 Obtain User Password
 
 <img src="static/password00.png" alt="" width="800">
 
-用户密码在上面的 **连接信息** 和教程页面末尾找到
+The user password can be found at the bottom of the **Connection Information** page.
 
 <img src="static/password01.png" alt="" width="600">
 
-### 5.2 VNC 直连
+### 7.2 Direct VNC Connection
 
-与 SSH 一样需配置 Stunnel。
+Direct VNC connection is similar to direct SSH connection. Before the connection is established, the Stunnel configuration must also be completed first.
 
-以 MobaXterm 为例
+Using MobaXterm as an example:
 
-- 配置好 Stunnel
-- 点击左边的 **Session** 按钮，选择 **VNC**
-- 地址输入框输入 `localhost`，端口填入 `5901`，点击 **OK** 连接即可
-- 如需密码请参考上一节 SSH 部分 **用户密码** 说明
+1. Complete the Stunnel configuration.
+2. Click **Session** on the left.
+3. Select **VNC**.
+4. Enter `localhost` for the address.
+5. Enter `5901` for the port.
+6. Click **OK** to establish the connection.
+
+If a password is required, refer to **User Password** section in the previous section.
 
 <img src="static/vnc.png" alt="" width="800">
 
-成功连接如下图
+Example interface after successful connection:
 
 ![](./static/remote_connected.png)
 
-## 6. API 调用
+## 8. API Calls
 
-### 6.1 Ollama 接口调用
+### 8.1 Ollama API Calls
 
-本功能目前仅支持：
+Currently, only the following instance types are supported:
 
-- 通义 Qwen 大模型实例
-- Deepseek 大模型实例
+- Tongyi Qwen large model instances
+- DeepSeek large model instances
 
-根据章节 [3.1 命令行访问](#31-命令行访问) 进入到实例工作台之后，点击右侧的 **API 调用** 按钮即可弹出配置页面
+After entering the instance workspace, refer to [4.1 Command-Line Access](#41-command-line-access), then click the **API Calling** button on the right to access the configuration page.
 
 <img src="static/api00.png" alt="" width="800">
 
 <img src="static/api01.png" alt="" width="800">
 
-设置请求头后，可通过给定 URL 调用 Ollama 接口：
+After configuring the request headers, the Ollama API can be invoked using the URL provided on the page.
 
 <img src="static/api02.png" alt="" width="800">
 
 <img src="static/api03.png" alt="" width="800">
 
-### 6.2 自定义接口调用
+### 8.2 Custom API Calls
 
-实例支持通过指定的端口 `18080` 部署并访问自定义服务。
+Instances support deployment and external access for custom services through port `18080`.
 
-示例：运行 Python HTTP 服务：
+For example, a Python HTTP service can be run inside the instance:
 
 <img src="static/python_http.png" alt="" width="600">
 
-使用 Postman 模拟请求实例的 Get 或 Post 接口，deviceId 为实例的设备 ID：
+GET or POST requests can then be sent using Postman, where `DeviceID` is the instance device ID.
 
 <img src="static/postman.png" alt="" width="800">
 
-API Key 参考章节 [4.4 API Key 管理](#44-api-key-管理) 中获取：
+For API keys, refer to [6.4 API Key Management](#64-api-key-management).
 
 <img src="static/apikey.png" alt="" width="800">
 
-请求地址格式：
+The request URL format is as follows:
 
-```
+```text
 https://gdriscv.com/api/remote/{deviceId}
 ```
 
@@ -402,111 +463,118 @@ https://gdriscv.com/api/remote/{deviceId}
 
 <img src="static/address01.png" alt="" width="800">
 
-## 7. 开发示例
+## 9. Development Examples
 
-### 7.1 RISC-V 汇编开发
+This chapter provides representative development examples to help users quickly understand the platform capabilities and development workflow for RISC-V and AI applications.
 
-#### RVV 编程
+### 9.1 RISC-V Assembly and Vector Development
 
-RVV（RISC-V Vector）扩展用于高性能向量计算，与 ARM NEON 存在差异：
+#### 9.1.1 RVV Programming
 
-| 特性 | SVE (ARM) | RVV (RISC-V) |
+RVV (RISC-V Vector) is designed for high-performance vector computing scenarios. Compared with ARM NEON / SVE, RVV provides greater flexibility in vector-length configuration and hardware adaptability.
+
+The following table provides a brief comparison between RVV and ARM SVE:
+
+| Feature | SVE (ARM) | RVV (RISC-V) |
 | --- | --- | --- |
-| 指令集架构 | ARM v8/v9 的扩展 | RISC-V 的官方矢量扩展（V 扩展） |
-| 设计哲学 | 硬件透明性优先，强调代码兼容性 | 灵活性与可配置性优先，允许硬件定制 |
-| 寄存器结构 | 独立的谓词寄存器（P0-P15）+ Z 寄存器 | 通用寄存器复用为掩码，矢量寄存器可配置，简化设计 |
-| 最小实现要求 | 必须支持 128 位矢量 | 无固定最小长度，支持从 128 位到任意扩展 |
-| 编程模型 | 强调编译器自动优化（如自动矢量化） | 更多暴露硬件细节，支持手动优化 |
-| 数据类型支持 | 支持 FP32/FP64、INT8/16/32/64 等 | 支持 FP16/32/FP64、INT8/16/32/64 等，允许配置裁剪 |
-| 内存访问模式 | 支持复杂寻址 | 更强调显式内存操作 |
-| 应用场景 | ARM生态的高性能计算（服务器、超算） | RISC-V的定制化场景（AIoT、边缘计算） |
+| Instruction set architecture | ARM v8/v9 extension | Official RISC-V vector extension (V extension) |
+| Design philosophy | Prioritizes hardware transparency and code compatibility | Prioritizes flexibility and configurability, allowing hardware customization |
+| Register structure | Independent predicate registers (P0-P15) + Z registers | Vector registers can also be used as mask registers, configurable vector registers |
+| Minimum implementation requirement | Must support 128-bit vectors | No fixed minimum length, scalable from 128 bits |
+| Programming model | Emphasizes compiler-driven optimization | Better suited to manual optimization based on hardware characteristics |
+| Data type support | Supports FP32/FP64, INT8/16/32/64, etc. | Supports FP16/32/64, INT8/16/32/64, etc. |
+| Memory Access Pattern | Supports complex addressing | Emphasizes explicit memory operations |
+| Application scenarios | High-performance computing in the ARM ecosystem (servers, supercomputers) | Customized RISC-V scenarios (AIoT, edge computing) |
 
-核心代码示例：
+Core code example:
 
 ```c
 void vector_add_rvv(int32_t* vec1, int32_t* vec2, int32_t* result, size_t size) {
-    // 设置向量长度
+    // Set vector length
     size_t v1;
 
     for (size_t i = 0; i < size; i += v1) {
-        // 动态设置向量长度，如果__riscv_vsetvlmax_e32m4()>size-i，长度会被设置为size-i，否则会被设置为__riscv_vsetvlmax_e32m4()
+        // Set the vector length dynamically. If __riscv_vsetvlmax_e32m4() > size - i,
+        // the length is set to size - i; otherwise, it is set to __riscv_vsetvlmax_e32m4().
         v1 = __riscv_vsetvl_e32m4(size - i);
 
-        vint32m4_t v1 = __riscv_vle32_v_i32m4(&vec1[i], v1);  // 加载 vec1
-        vint32m4_t v2 = __riscv_vle32_v_i32m4(&vec2[i], v1);  // 加载 vec2
-        vint32m4_t vresult = __riscv_vadd_vv_i32m4(v1, v2, v1);  // 向量加法
-        __riscv_vse32_v_i32m4(&result[i], vresult, v1);  // 存储结果
+        vint32m4_t v1 = __riscv_vle32_v_i32m4(&vec1[i], v1);  // Load vec1
+        vint32m4_t v2 = __riscv_vle32_v_i32m4(&vec2[i], v1);  // Load vec2
+        vint32m4_t vresult = __riscv_vadd_vv_i32m4(v1, v2, v1);  // Vector addition
+        __riscv_vse32_v_i32m4(&result[i], vresult, v1);  // Store result
     }
 }
 ```
 
-在云实例中通过 Code Server 编辑代码：
+Inside the cloud instance, code can be edited through Code Server and compiled and validated by using `gcc`.
 
 <img src="static/rvv00.png" alt="" width="800">
 
-通过 gcc 编译与运行，示例结果如下：
-
 <img src="static/rvv01.png" alt="" width="600">
 
-#### RISC-V AI 指令编程
+#### 9.1.2 RISC-V AI Instruction Programming
 
-K1是一款8核RISCV AI-CPU。在RISCV开源指令集的基础上，K1增加了通用AI能力，可以提供50 KDMIPSCPU算力和2.0 TOPS的AI算力。通过将AI算力集成在CPU核内，K1可以实现对所有主流AI生态系统的快速融合。此外，K1支持RISC-V Vector 1.0标准，提供256-bit的向量计算带宽，可以提供2倍于ARM NEON的SIMD并行处理能力。
+K1 is an 8-core RISC-V AI CPU. Based on the open-source RISC-V instruction set, K1 adds general-purpose AI computing capability and can provide approximately 50 KDMIPS of CPU compute power and 2.0 TOPS of AI compute power.
+
+The chip supports the RISC-V Vector 1.0 standard and provides 256-bit vector compute bandwidth, enabling strong SIMD parallel processing capability for high-performance AI computing.
 
 <img src="static/ai-cpu.png" alt="" width="800">
 
-核心代码示例：
+Core example code:
 
 <img src="static/demo00.png" alt="" width="800">
 
-通过 Code Server 编辑并编译：
+Example of editing and compiling through Code Server:
 
 <img src="static/demo01.png" alt="" width="800">
 
-运行结果：
+Execution result:
 
 <img src="static/demo03.png" alt="" width="500">
 
-#### 卷积优化示例
+#### 9.1.3 Convolution Optimization Example
 
-卷积神经网络（CNN）是一种深度学习模型，常用于解决图像识别问题。相较于全连接神经网络，卷积神经网络采用局部感知性和参数共享的方式，通过卷积核的滑动和权值共享，可以有效减少参数数量和计算量，提高模型的泛化能力。其广泛应用于图像分类、目标检测、图像分割等领域。卷积神经网络在图像处理领域的应用不仅提高了图像处理的效率和准确性，也推动了人工智能技术在视觉领域的发展和应用。
+Convolutional neural networks (CNNs) are widely used in image classification, object detection, and image segmentation tasks. Through local perception and parameter sharing, convolution operations effectively reduce model parameter size and improve inference efficiency.
 
-1×3 卷积核心代码示例：
+The following is a 1×3 convolution optimization example:
 
 <img src="static/cnn00.png" alt="" width="800">
 
-在云实例中编辑：
+The editing interface in the cloud instance is shown below:
 
 <img src="static/cnn01.png" alt="" width="800">
 
-运行结果：
+Execution result:
 
 <img src="static/cnn02.png" alt="" width="500">
 
-### 7.2 AI 开发
+### 9.2 AI Development Examples
 
-#### YOLOv8 姿态识别
+#### 9.2.1 YOLOv8 Pose Estimation
 
-YOLOv8-pose 是 Ultralytics 团队在 YOLOv8 基础上开发的用于人体姿态估计（Human Pose Estimation） 的模型，能够实时检测图像或视频中的人体，并同时预测人体关键点（如关节、四肢端点等）的位置。它继承了 YOLO 系列 “单阶段检测” 的高效特性，在精度和速度上都表现优异，广泛应用于动作识别、运动分析、人机交互等场景。本例子介绍基于RISC-V AI算力和优化的RISC-V vector1.0 的性能下姿态识别开发示例：
+YOLOv8-pose is a human pose estimation model based on YOLOv8. It detects human targets and outputs keypoint locations, making it suitable for action recognition, motion analysis, and human-computer interaction scenarios.
 
-##### 下载代码
+This example demonstrates the basic workflow for pose estimation development in a RISC-V AI computing environment.
+
+##### Step 1: Download the Code
 
 ```bash
 git clone https://gitee.com/bianbu/spacemit-demo.git
 ```
 
-##### 下载模型
+##### Step 2: Download the Model
 
 ```bash
 cd spacemit-demo/examples/CV/yolov8-pose/model
 sh download_model.sh
 ```
 
-脚本会下载：
+After the model download is complete, the following files are available:
 
-- FP32: `yolov8n-pose.onnx`
-- INT8: `yolov8n-pose.q.onnx`
+- FP32 model: `yolov8n-pose.onnx`
+- INT8 model: `yolov8n-pose.q.onnx`
 
-##### 创建环境并安装依赖
+##### Step 3: Create an Environment and Install Dependencies
 
 ```bash
 python3 -m venv <env>
@@ -514,29 +582,29 @@ source <env>/bin/activate
 pip install -r requirements.txt --index-url https://git.spacemit.com/api/v4/projects/33/packages/pypi/simple
 ```
 
-##### 编辑代码
+##### Step 4: Edit the Code
 
-云实例打开code-server编辑代码:
+Open Code Server in the cloud instance and edit the relevant code.
 
 <img src="static/yolov8_00.png" alt="" width="800">
 
-##### 运行
+##### Step 5: Run the Example
 
 ```bash
 python test_yolov8_pose.py
 ```
 
-示例结果如下
+Example execution result:
 
 <img src="static/yolov8_01.png" alt="" width="800">
 
-#### YOLOv5-face 人脸检测
+#### 9.2.2 YOLOv5-face Face Detection
 
-YOLOv5-face 是基于 YOLOv5 改进的人脸检测模型，专注于高精度、实时的人脸检测任务。它在 YOLOv5 基础架构上针对人脸检测的特点（如人脸尺度小、密集分布、姿态多样等）进行了优化，能够高效检测图像或视频中的人脸，并输出边界框（bounding box），广泛应用于人脸验证、监控安防、表情分析等场景。
+YOLOv5-face is a real-time detection model optimized for face detection scenarios. It is suitable for use cases such as face recognition, security monitoring, and expression analysis.
 
-本例子介绍基于 RISC-V AI 算力和优化的 RISC-V vector1.0 的性能下人脸识别开发示例。
+This example demonstrates the basic workflow for deploying and running a face detection task in a RISC-V AI environment.
 
-##### 下载示例代码与模型
+##### Step 1: Download the Example Code and Model
 
 ```bash
 git clone https://gitee.com/bianbu/spacemit-demo.git
@@ -544,83 +612,79 @@ cd spacemit-demo/examples/CV/yolov5-face/model
 sh download_model.sh
 ```
 
-##### 创建环境并安装依赖
+##### Step 2: Create an Environment and Install Dependencies
 
 ```
-python3 -m venv name(虚拟环境名) 
+python3 -m venv name(virtual environment name) 
 source name/bin/activate 
 pip install -r requirements.txt --index-url https://git.spacemit.com/api/v4/projects/33/packages/pypi/simple
 ```
 
-##### 编辑与运行
+##### Step 3: Edit and Run
 
-在 code-server 打开并编辑代码 `test_yolov5-face.py`：
+Open and edit `test_yolov5-face.py` in Code Server.
 
 <img src="static/yolov5_00.png" alt="" width="800">
 
-示例结果如下
+Example execution result:
 
 <img src="static/yolov5_01.png" alt="" width="800">
 
-### 7.3 OCR 识别
+### 9.3 OCR Recognition Example
 
-基于 K1 RISC-V 深度优化的 OpenCV OCR 识别功能。
+This example describes OCR capability based on OpenCV, deeply optimized for the K1 RISC-V platform.
 
-示例如下
-
-#### 下载示例代码
+#### Step 1: Download the Example Code
 
 ```bash
 git clone https://gitee.com/bianbu/spacemit-demo.git
 ```
 
-#### 下载模型
+#### Step 2: Download the Model and Test Data
 
-执行模型下载脚本
+Run the model download script:
 
 ```bash
 cd spacemit-demo/examples/CV/ocr/model
 sh download_model.sh
 ```
 
-执行测试数据下载脚本
+Run the test data download script:
 
 ```bash
 cd data
 sh download_data.sh
 ```
 
-在云实例打开 code-server 编辑 `test_ocr.py` 代码：
-
-<img src="static/ocr00.png" alt="" width="800">
-
-#### 创建环境并安装依赖
+#### Step 3: Create an Environment and Install Dependencies
 
 ```
-python3 -m venv name(虚拟环境名) 
+python3 -m venv name(virtual environment name) 
 source name/bin/activate 
 pip install -r requirements.txt --index-url https://git.spacemit.com/api/v4/projects/33/packages/pypi/simple
 ```
 
-#### 编辑与运行
+#### Step 4: Edit and Run
 
-执行代码从 log 打印可看出识别结果
+Edit `test_ocr.py` through Code Server in the cloud instance.
+
+<img src="static/ocr00.png" alt="" width="800">
+
+After execution is complete, the recognition results can be viewed in the log output.
 
 <img src="static/ocr01.png" alt="" width="800">
 
-好的，这里是 **经过专业技术写作方式优化后的中文版本**，结构清晰、表达专业，可直接用于技术文档或 GitHub：
+### 9.4 OpenHarmony Debugging
 
-### 7.3 OpenHarmony 调试
+#### 9.4.1 Apply for an Online Instance and Connect Remotely
 
-#### 申请在线实例并进行远程连接
-
-申请 OpenHarmony 在线实例后，可通过远程桌面进行开发与调试操作。
+After applying for an OpenHarmony online instance, application development and debugging can be performed through the remote desktop.
 
 <img src="static/oh00.png" alt="" width="800">
 
-#### 查看日志（hilog）
+#### 9.4.2 View System Logs (hilog)
 
-在远程环境中，执行以下命令即可实时查看系统日志：
+Run the following command in the remote environment to view system logs in real time:
 
 ```bash
 hilog
@@ -628,48 +692,48 @@ hilog
 
 <img src="static/oh01.png" alt="" width="800">
 
-#### 应用文件管理（上传 / 安装 / 删除 / 查看）
+#### 9.4.3 Application File Management
 
-在远程桌面右下角的工具区域，可以对应用文件进行：
+The tool area in the lower-right corner of the remote desktop supports the following file management operations:
 
-- 上传
-- 安装
-- 删除
-- 查看
+- Upload
+- Install
+- Delete
+- View
 
 <img src="static/oh02.png" alt="" width="800">
 
-#### 应用卸载
+#### 9.4.4 Uninstall an Application
 
-在远程桌面上选中目标应用图标，**鼠标左键长按**，当出现卸载选项后即可执行卸载。
+In the remote desktop, select the target application icon and **press and hold the left mouse button** until the uninstall option appears, then perform the uninstall operation.
 
-<img src="static/oh03.png" alt="" width="800">
+<img src="static/oh03.png" alt="l" width="800">
 
-#### 应用安装
+#### 9.4.5 Install an Application
 
-点击工具区域中的 **“安装”** 按钮，选择待安装的应用包即可完成安装流程。
+Click the **Install** button in the tool area, then select the application package to complete the installation.
 
 <img src="static/oh04.png" alt="" width="400">
 
-#### 查看安装日志
+#### 9.4.6 View Installation Logs
 
-安装过程中，可通过如下命令查看安装相关日志：
+During installation, the following command can be used to view installation-related logs:
 
 ```bash
 hilog | grep bm
 ```
 
-如果日志中出现 `bm output`，则说明应用安装成功。
+If `bm output` appears in the log, the application is generally considered to have been installed successfully.
 
 <img src="static/oh05.png" alt="" width="800">
 
-#### 查看应用运行日志
+#### 9.4.7 View Application Runtime Logs
 
 ```bash
 hilog | grep "xxx"
 ```
 
-示例：
+Example:
 
 ```bash
 hilog | grep "VideoPlay"
@@ -677,10 +741,7 @@ hilog | grep "VideoPlay"
 
 <img src="static/oh06.png" alt="" width="800">
 
-#### 大模型开发
+#### 9.4.8 Future Expansion Directions
 
-Ollama 以及 MCP开发（待补充）
-
-#### GUI 开发
-
-基于 RISC-V 在线环境 QT 开发、Electron 开发（待补充）
+- Large model development: Ollama and MCP development capability (to be added)
+- GUI development: Qt and Electron development capability based on the RISC-V online environment (to be added)
